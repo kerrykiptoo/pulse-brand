@@ -93,12 +93,12 @@ export function DeliveryFlow() {
               <text x="12" y="60" fill="#888880" fontFamily="monospace" fontSize="7">📞 0712 345 678</text>
             </motion.g>
 
-            {/* ── THE SCOOTER ── */}
+                       {/* ── THE SCOOTER ── */}
             <motion.g
               style={{
-                opacity: scooterOpacity,
+                opacity: scooterOpacity as any,
                 offsetPath: "path('M 80 380 C 250 420, 350 300, 500 340 C 600 370, 700 280, 830 320')",
-                offsetDistance: useTransform(bikeProgress, [0, 1], ['0%', '100%']),
+                offsetDistance: useTransform(bikeProgress, [0, 1], ['0%', '100%']) as any,
               }}
             >
               {/* Scooter body — doodle style */}
